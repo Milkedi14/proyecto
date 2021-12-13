@@ -1,0 +1,70 @@
+.navone{
+ grid-area: navone;
+ 
+}
+.navtwo{
+ grid-area: navtwo;
+}
+.firstpic{
+ grid-area: firstpic; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2 auto;
+    grid-template-areas: "navone   navone   navone"
+                         "navtwo   navtwo   navtwo";
+
+    max-width: 100%;
+}
+.navone{
+    grid-area: navone;
+}
+.navtwo{
+    grid-area: navtwo;
+}
+.products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 3 auto;
+        grid-template-areas: "Titulo2    Titulo2   Titulo2"
+                              "product1  product2  product3" 
+                              "titulo3   titulo3   titulo3"
+                              "last      last      last";
+        
+        gap: 5%;
+        margin-top: 2%;
+
+}
+.Titulo2{
+    grid-area: Titulo2;
+}
+.product1{
+    grid-area: product1;
+}
+.product2{
+    grid-area: product2;
+}
+.product3{
+    grid-area: product3;
+}
+
+.lasti{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 3 auto;
+    grid-template-areas: "titulo3 titulo3 titulo3 titulo3"
+                         "last    last    last    last";
+
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+button{
+    width:450px;
+    height:50px; 
+    background-color: rgb(255, 181, 255); 
+    border-color:rgb(255, 181, 255);
+}
